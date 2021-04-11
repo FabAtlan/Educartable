@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="icon/icon-256x256.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <title>Educartable Familles - l'application de suivi de scolarité pour l'école primaire</title>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <img class="img" src="img/educartable.svg" alt="Logo Educartable">
+    <nav>
+      <a 
+        href="#" id="bouton-menu"
+        class="mobile"
+        onclick="menuMobile(); return false;">&#x2630;
+      </a>
+      <ul id="hambMenu" class="menu">
+        <li><a class="link" href="#functionality">Fonctionnalités</a></li>
+        <li><a class="link" href="#">Assistance technique</a></li>
+        <li><a class="link" href="#">Règles de confidentialité</a></li>
+        <li><a class="connect" href="#">Connexion à l'application familles</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- MAIN -->
+  <main>
+    <section class="bg-class">
+      <div class="center-content">
+        <h1 class="toUpper">Le cartable numérique<br>pour l'école primaire</h1>
+        <p>Suivez simplement la scolarité de votre enfant grâce à une application gratuite et sans publicité pour les 
+          familles !
+        </p>
+        <p>Anciennement nommée Educlasse, cette application est une solution conçue par des professeurs des écoles.</p>
+        <a href="#" title="Web" target="_blank"><img src="img/webFR.svg" alt="Web link" width="200px" height="77.5px"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.educartable.app" target="_blank" title="Goggle play">
+          <img src="img/androidFR.svg" alt="Google Play link" width="200px" 
+          height="77.5px">
+        </a>
+        <a href="https://apps.apple.com/fr/app/educartable/id1469182350" title="Apple store" target="_blank">
+          <img src="img/iosFR.svg" alt="Apple store link" width="200px" height="77.5px">
+        </a>
+      </div>
+    </section>
+    <section id="functionality">
+      <p class="new-version">Cette nouvelle version nécessite de créer un compte utilisateur par un adulte, pour 
+        permettre une gestion plus 
+        aisée de vos identifiants. Toutes les données sont hébergées en France et nous nous conformons au RGPD. 
+        <a href="#" class="chartre">Voir notre chartre de protection des données.</a>
+      </p>
+      <section class="themes">
+        <!-- Carnet de liaison -->
+        <div>
+          <h2 class="toUpper">Carnet de liaison</h2>
+          <img src="img/messages.svg" alt="" width="120px" height="120px">
+          <p>Accédez au dossier scolaire de votre enfant.</p>
+          <ul>
+            <li>Recevez les messages en temps réel.</li>
+            <li>Discutez en privé avec l'enseignant.</li>
+            <li>Signez en ligne les messages.</li>
+          </ul>
+        </div>
+        <!-- Cahier de textes -->
+        <div>
+          <h2 class="toUpper">Cahier de textes</h2>
+          <img src="img/tasks.svg" alt="" width="120px" height="120px">
+          <p>Accompagnez votre enfant pour les devoirs</p>
+          <ul>
+            <li>Des devoirs classés par discipline.</li>
+            <li>L'enseignant peut joindre des documents.</li>
+            <li>Consultez en un coup d'oeil les jours à venir.</li>
+          </ul>
+        </div>
+        <!-- Dossier scolaire -->
+        <div>
+          <h2 class="toUpper">Dossier scolaire</h2>
+          <img src="img/schoolbook.svg" alt="" width="120px" height="120px">
+          <p>Accédez au dossier scolaire de votre enfant.</p>
+          <ul>
+            <li>Signez en ligne les livrets d'évaluation.</li>
+            <li>Accédez aux livrets archivés.</li>
+            <li>Téléchargez les documents en PDF.</li>
+          </ul>
+        </div>
+        <!-- Plusieurs enfants -->
+        <div>
+          <h2 class="toUpper">Plusieurs enfants</h2>
+          <img src="img/children.svg" alt="" width="120px" height="120px">
+          <p>Tous vos enfants avec un seul compte.</p>
+          <ul>
+            <li>Consultez tous les cahiers en même temps.</li>
+            <li>Message groupé à plusieurs enseignants.</li>
+            <li>Gérez vous-même vos identifiants.</li>
+          </ul>
+        </div>
+      </section>
+    </section>
+    <section class="teacher-info">
+      <p>Vous êtes enseignant(e) et vous souhaiteriez utiliser cette application dans votre école ?</p>
+      <p>Educartable est un module de la suite applicative <a href="https://www.edumoov.com/" title="Site EDUMOOV"
+        class="edumoov">
+        <img src="https://www.edumoov.com/themes/basic/logo_edumoov/small.min.svg" alt="Logo Edumoov"></img></a>, 
+        utilisée par des dizaines de milliers de professeurs des écoles au quotidien.
+        <a class="know-more" href="#">En savoir plus.</a>
+      </p>
+      <p></p>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy 2018 <a class="text" href="#">Educartable.com <span class="normal">par  EDUMOOV</span>.</a> Tous droits réservés. <a class="text" 
+      href="#">Mentions légales</a> - <a class="text" href="#">GCU</a></p>
+  </footer>
+  <script>
+    function menuMobile() {
+      var bloc = document.getElementById("hambMenu");
+      bloc.classList.toggle("afficher");
+    }
+  </script>
+</body>
+</html>
