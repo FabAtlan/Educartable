@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #faf9f9;
   padding: 0;
@@ -52,17 +56,26 @@ body {
   opacity: .6;
 }
 
-.header .connect {
+.btn {
   padding: 12px;
-  background-color: #82c91e;
   color: #fff;
   font-weight: bold;
   border-radius: 30px;
+  border: none;
   transition: all .3s ease-in-out;
   box-shadow: 0 0 3px #999;
+  text-decoration: none;
 }
 
-.header .connect:hover {
+.connect {
+  background-color: #82c91e;
+}
+
+.connect1 {
+  background-color: #009aed;
+}
+
+.btn:hover {
   box-shadow: 0 0 6px #999;
 }
 
@@ -227,10 +240,58 @@ div a {
 }
 
 .mobile:hover {
-  /* opacity: .5; */
   border-radius: 50%;
   border-color: lightgrey;
   background-color: rgba(223, 222, 222, 0.6);
+}
+
+/* Formulaire de connection */
+.contain-connect {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+}
+
+.banner {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+}
+
+.form {
+  width: 100%;
+  color: #363636;
+  display: flex;
+  flex-direction: column;  
+}
+
+.form-lbl {
+  margin: 0 0 5px 0;
+  font-weight: 600;
+}
+
+.form-ctrl {
+  margin: 0 0 15px 0;
+  height: 36px;
+  background-color: #e8f0fe;
+  border: 1px solid #bbb;
+}
+
+.forgot-psw {
+  float: right;
+  text-decoration: none;
+  color: #0088ce;
+  margin-bottom: 15px;
+}
+
+.sect-btn {
+  clear: both;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 600px) {
