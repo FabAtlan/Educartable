@@ -1,4 +1,6 @@
-Contexte
+Auteur: Fabrice ATLAN
+Mise à jour: 21/04/2021
+Contexte: En formation `Graduate Développeur PHP/Symfony`
 
 Dans le cadre de ma formation Graduate Développeur PHP/Symfony, je me suis lancé personnellement le défi de réaliser un 
 clône de la page d'accueil de l'application "Educartable familles".
